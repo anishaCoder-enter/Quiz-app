@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+	<div class="container">
+
+    <div class = "home-box ">
+        <h2>Instruction : </h2>
+        <ul>
+	        <li>Total number of Questions : <span class = "total-question"></span></li><br>
+	  	
+	        <li>There is no negative marking.</li><br>
+
+    	</ul>
+        <button type = "button" class = "btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    
+<div class = "question-box quiz-box hide">
+
+		<div class="header">
+	    	<div class = "question-indicator answer-indicator">
+	    		<!-----
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+	    		<div class="round"></div>
+				  ----->
+	    	</div>
+
+	    	<div class="quiz_timer">
+	    	</div>
+
+	    </div>
+
+    	<div id="ques" class = "questions question-number">
+    		<!----
+    		Question : 
+			--->
+    	</div>
+
+    	<div id = "quiz" class = "question-text quiz-box">
+    		<!-------
+    		<span>What does HTML stand for?</span>
+    		------>
+    	</div>
+
+    	<div class ="answers">
+    		Answers : 
+    		
+    	</div>
+
+    	<div id="quiz1" class = "options option-container">
+			
+    		<!-------------
+    		<div class = "option">1. Hyper Text Markup Language</div>
+    		<div class = "option">2. Hyperlinks text Markup language</div>
+    		<div class = "option">3. Home Tool Markup Language</div>
+    		<div class = "option">4. Hyper Text Modified Language</div>
+    		-------->
+    	</div>
+
+    	
+		<div class="prev-next-btn">
+		    
+		    <button type ="button" class="btn" onclick="next()">Next &raquo;</button>
+		    		
+		</div>
+
+
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    <div class="result-box hide">
+
+    	<h1>Quiz Result </h1>
+
+   		<p>Total Questions : <span id="total-question" class="total-questions"></span></p>
+
+   		<p>Questions Attempted : <span id="attempt" class="total-attempted total-attempt"></span></p>
+
+   		<p>Correct Answers : <span id="correct" class="total-correct"></span></p>
+
+   		<p class="user_score">Your Score : <span id="yourscore"class="total-Score"></span></p>
+   		
+
+   		<div class="try-home-btn">
+   			
+   			<button type="button" class="btn" onclick="tryAgainQuiz()"><span class="try-again-btn">Try Again</span></button>
+   			
+
+   			<button type="button" class="btn" onclick="backToHome()">Back To Home</button>
+
+   		</div>
+    	
+    </div>
+
+	</div>
+
+<!----- question.js ----->
+<script src="js/question.js"></script>
+
+<!----- quiz.js ----->
+<script src="js/quiz.js"></script>
+
+
+
+</body>
+</html>
